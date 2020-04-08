@@ -1,3 +1,122 @@
 @import '_vars';
 @import '_global';
 
+// start header 
+.header__top{
+    background-color: $bg;
+}
+.header__top-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+.header__btn{
+    margin-left: auto;
+    margin-right: 50px;
+}
+
+.header__account{ 
+    line-height: 22px;
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &-info { 
+        display: flex;
+        min-height: 100px;
+        padding:25px;
+    }
+    &-avatar{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: inline-block;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-right: 20px; 
+    }
+    span{
+        font-size: 16px;
+        font-weight: 500;
+    }
+    &-total {
+        display: flex;
+        font-size: 15px;
+        color: #2585ed;
+    }
+}
+
+.header__btn{
+    text-align: center;
+    width: 140px;
+    &-seller{
+        border-radius: 18px;
+        padding:11px;
+        background: $blue;
+        color: #ffffff;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    &-seller:hover {
+        background: #ffffff;
+        color: $color-title;
+    }  
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+.header__list {
+    &-item{
+        display: inline-block;
+        &+li {
+             margin-left: 30px;
+        }
+    }
+    &-link {
+        font-size: 15px;
+        color: $color-title;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+}
+
+.header__bottom-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__bottom-form {
+    max-width: 360px;
+    position: relative;
+    input {
+        display: block;
+        width: 100%;
+        border: 1px solid #d9dfe5;
+        border-radius: 18px;
+        height: 44px;
+        padding-left: 25px;
+        padding-right: 100px;
+        &::placeholder {
+            color: #90a4ae;
+            font-weight: 500;
+            font-size: 15px;
+        }
+    }
+}
+button {
+    position: absolute;
+    width: 70px;
+    min-height: 44px;
+    border-radius: 18px;
+    border: none;
+    background-color: $blue;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+}
