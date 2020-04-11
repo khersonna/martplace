@@ -32,14 +32,12 @@
         height: 50px;
         border-radius: 50%;
         display: inline-block;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include background;
         margin-right: 20px; 
     }
     span{
         font-size: 16px;
-        font-weight: 500;
+        @include f500;
     }
     &-total {
         display: flex;
@@ -84,7 +82,7 @@
     &-link {
         font-size: 15px;
         color: $color-title;
-        font-weight: 500;
+        @include f500;
         text-transform: uppercase;
     }
 }
@@ -104,10 +102,10 @@
         border-radius: 25px;
         height: 44px;
         padding-left: 25px;
-        padding-right: 100px;
+        padding-right: 75px;
         &::placeholder {
             color: #90a4ae;
-            font-weight: 500;
+            @include f500;
             font-size: 15px;
         }
     }
@@ -128,11 +126,10 @@ button[type="submit"] {
 //srart search
     .search{
     background: linear-gradient(180deg, rgb(0, 48, 222) 0%, rgb(23, 69, 237) 54%, rgb(46, 90, 251) 100%);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background;
     height: 725px;
 }
+
 .search__inner{
     padding: 160px 0 0;
     color: #ffffff;
@@ -145,16 +142,16 @@ button[type="submit"] {
         color: #f3f3f8;
         padding-bottom: 30px;
         filter: drop-shadow(0px 2px 1px rgba(0, 0, 0, 0.2));
-        span{
-            display: block;
-            font-weight: 700;
-        }
+    }
+    span {
+        display: block;
+        @include f700;
     }
     &-text{
         font-size: 20px;
         padding-bottom: 70px;
         color: #f3f3f8;
-        font-weight: 500;
+        @include f500;
     }
      &-btn {
         max-width: 190px;
@@ -217,10 +214,10 @@ button[type="submit"] {
          border: 1px solid #d9dfe5;
          border-bottom-left-radius:6px;
          border-top-left-radius:6px;
-         &::placeholder {
-            padding-left: 27px;
+         padding: 0 27px;
+         &::placeholder {      
             color: #676767;
-            font-weight: 500;
+            @include f500;
          }
      }
     select {
@@ -268,16 +265,12 @@ button[type="submit"] {
         width: 110px;
         margin: 0 auto;
         margin-top: 40px;
-        background-repeat: no-repeat;
         display: block;
-        background-position: center;
-        background-size: cover;
-        cursor: pointer;
+       @include background;
     }
     &-title{
         font-size: 24px;
         padding: 20px  0;
-        cursor: pointer;
     }
     &-text{
         color:$text;   
@@ -300,7 +293,7 @@ button[type="submit"] {
     min-height: 110px;
     width: 100%;
     background-color: #fff;
-    padding: 35px 25px;
+    padding: 35px 35px;
     font-size: 30px;
     color: #000000;
     margin-bottom: 30px;
@@ -337,7 +330,7 @@ button[type="submit"] {
        }
    } 
 }
-.products__inner-box {
+.products__inner-holder{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -353,38 +346,26 @@ button[type="submit"] {
     border-radius: 6px;
     max-width: 360px;
     text-align: center;
-    cursor: pointer;
     box-shadow: 0px 2px 4px 0px rgba(108, 111, 105, 0.1);
     margin-bottom: 30px;
-    &-img{
-        border-top-left-radius:6px;
-        border-top-right-radius:6px;  
-        min-height: 230px;
-        background-repeat: no-repeat;
-        display: block;
-        background-position: center;
-        background-size: cover;
-    }
     &-title{
         font-size: 20px;
         color: #000000;
-        font-weight: 500;
+        @include f500;
     }
     &-author{
         display: inline-block;
         margin-right: 10px;
         display: flex;
         align-items: center;
+        cursor: pointer;
        .avatar{
         height: 30px;
         width: 30px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
+       @include background;
         margin-right: 5px;
         border-radius: 10px;
-       } 
-        
+       }  
     }
     span {
          font-size: 15px;
@@ -394,17 +375,88 @@ button[type="submit"] {
         display: inline-block;
         display: flex;
         align-items: center;
+        cursor: pointer;
         .content-logo {
         height: 16px;
         width: 16px;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover; 
+        @include background;
         margin-right: 5px;
         }
         span{
             color: #9574d0;
         }
+    } 
+}
+.product__box {
+    padding: 30px 25px 15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 3;
+    &-price {
+        padding: 5px 15px;
+        border: none;
+        border-radius: 25px;
+        background-color: #e6f1fd;
+        cursor: pointer;
+        span {
+            color: $blue;
+            @include f500;
+        }
+    }
+    &-like {
+        cursor: pointer;
+        span {
+            color: #6f7d8d;
+        }
+        svg {
+            width: 15px;
+            height: 15px;
+            fill: #bba1de;
+        }
+    }
+    &-cart {
+        span {
+            color: $blue;
+        }
+        svg {
+            width: 15px;
+            height: 15px;
+            fill: $blue;
+        }
+    }
+    &-star {
+        margin-right: 50px;
+    
+    }
+}
+.product__item-img{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    min-height: 230px;
+    display: block;
+    @include background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        background: linear-gradient(180deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%) !important;
+       .product__item-btn {
+           color: #fff;
+           padding: 10px 30px;
+           border: 1px solid #fff;
+           border-radius: 25px;
+           @include f500;
+           font-size: 15px;
+           line-height: 25px;
+           box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+           margin-right: 5px;
+       }
+      .product__item-btn:hover {
+          color: $blue;
+          background-color: #fff;
+      }
+    
     }
 }
 .product__item-name{
@@ -413,11 +465,6 @@ button[type="submit"] {
     display: flex;
     justify-content:space-evenly;
     align-items: center;
-}
-
-.product__item-box{
-    padding-top: 30px;
-    padding-bottom: 15px;
 }
 
 .products__bottom-btn {
@@ -441,12 +488,37 @@ button[type="submit"] {
     }
 }
 
-
-
-
-
-
-
-
-
 // end products
+// start product-slider
+.product__slider{
+    padding: 120px 0;
+    background-color: #eef1f5;
+   
+}
+.slick-arrow{
+    position: absolute;
+    width: 55px;
+    height: 45px;
+    border: none;
+    background-color: $blue;
+    outline: none;  
+    margin:0 30px;
+    img{
+        width: 20px;
+        height: 20px;
+    }
+}
+.slick-prev{
+    top:-105px;
+    right: 50px;
+    border-bottom-left-radius:25px;
+    border-top-left-radius:25px;
+     
+}
+.slick-next{
+    top:-105px;
+    right: 0;
+    border-bottom-right-radius:25px;
+    border-top-right-radius:25px;
+}
+// end products-slider
