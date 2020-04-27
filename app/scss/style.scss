@@ -1,6 +1,7 @@
+@import '_fonts';
 @import '_vars';
 @import '_global';
-@import '_fonts';
+
 
 // start header 
 .header__top {
@@ -20,6 +21,7 @@
 }
 
 .header__logo {
+    display: block;
     margin-left: 5px;
 }
 
@@ -45,40 +47,42 @@
         margin-right: 20px;
     }
 
-    span {
+    &-name {
+        display: block;
         font-size: 16px;
         @include f600;
     }
 
     &-total {
+        display: block;
         display: flex;
         font-size: 15px;
         color: #2585ed;
     }
 }
 
-.header__btn {
+.header__btn-seller {
     text-align: center;
-    width: 140px;
+    min-width: 140px;
+    margin-left: auto;
+    margin-right: 50px;
+    border-radius: 25px;
+    padding: 10px 15px;
+    background: $blue;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all .5s;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 
-    &-seller {
-        border-radius: 25px;
-        padding: 10px 15px;
-        background: $blue;
-        color: #ffffff;
-        cursor: pointer;
-        font-size: 14px;
-        transition: all .5s;
-        box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
-
-    }
-
-    &-seller:hover {
+    &:hover {
         background: #ffffff;
         color: $color-title;
-
     }
 }
+
+
+
 
 .header__menu {
     display: flex;
@@ -155,8 +159,8 @@ button[type="submit"] {
     color: #ffffff;
     text-align: center;
     position: relative;
+    margin-bottom: 115px;
 
-    // margin-bottom: 115px;
     &-title {
         font-size: 60px;
         line-height: 70px;
@@ -184,11 +188,14 @@ button[type="submit"] {
         color: #ffffff;
         border: 1px solid #ffffff;
         border-radius: 30px;
-        padding: 15px 20px;
-        margin-left: 30px;
-        margin-bottom: 140px;
+        padding: 20px 30px;
         transition: all .5s;
         box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+
+        &+& {
+            margin-left: 30px;
+        }
+
 
     }
 
@@ -197,6 +204,10 @@ button[type="submit"] {
         color: $blue;
 
     }
+}
+
+.search__inner-buttons {
+    padding-bottom: 170px;
 }
 
 .search__inner-box {
@@ -237,6 +248,8 @@ button[type="submit"] {
 }
 
 .search__inner-form {
+    display: flex;
+
     input {
         min-width: 600px;
         height: 55px;
@@ -253,7 +266,6 @@ button[type="submit"] {
     }
 
     select {
-        // appearance: none;
         color: $text;
         min-width: 195px;
         height: 55px;
@@ -355,7 +367,7 @@ button[type="submit"] {
     min-height: 110px;
     width: 100%;
     background-color: #fff;
-    padding: 35px 35px;
+    padding: 35px;
     font-size: 30px;
     color: #000000;
     margin-bottom: 30px;
@@ -442,7 +454,8 @@ button[type="submit"] {
         }
     }
 
-    span {
+    .theme-name {
+
         font-size: 15px;
         color: #000000;
     }
@@ -479,24 +492,29 @@ button[type="submit"] {
         border-radius: 25px;
         background-color: #e6f1fd;
         cursor: pointer;
-
-        span {
-            color: $blue;
-            @include f600;
-        }
+        display: block;
+        color: $blue;
+        @include f600;
     }
+
 
     &-like {
         cursor: pointer;
+position: relative;
+    &::before{
+        content: "\e813";
+         font-family: 'Linearicons-Free';
+         color: #bba1de;;
+         font-size: 15px;
+         position: absolute;
+         top: 0;
+         left: 50%;
+         margin-right: -50%;
+         transform: translate(-50%, -50%)
 
+    }
         span {
             color: #6f7d8d;
-        }
-
-        svg {
-            width: 15px;
-            height: 15px;
-            fill: #bba1de;
         }
     }
 
@@ -553,8 +571,8 @@ button[type="submit"] {
 }
 
 .product__item-name {
-    padding-top: 20px;
-    padding-bottom: 25px;
+    margin-top: 20px;
+    margin-bottom: 25px;
     display: flex;
     align-items: center;
 }
@@ -653,8 +671,8 @@ button[type="submit"] {
         position: relative;
 
         &::before {
-            content: '\f0b1';
-            font-family: 'icomoon';
+            content: "\e84c";
+            font-family: 'Linearicons-Free';
             color: #feb71d;
             font-size: 48px;
             position: absolute;
@@ -675,8 +693,8 @@ button[type="submit"] {
     color: #58c9e9;
 
     &::before {
-        content: '\f0ed';
-        font-family: 'icomoon';
+        content: "\e80b";
+        font-family: 'Linearicons-Free';
         color: #58c9e9;
     }
 }
@@ -685,8 +703,8 @@ button[type="submit"] {
     color: #77de51;
 
     &::before {
-        content: '\f118';
-        font-family: 'icomoon';
+        content: "\e854";
+        font-family: 'Linearicons-Free';
         color: #77de51;
     }
 }
@@ -695,9 +713,8 @@ button[type="submit"] {
     color: #ff6a6d;
 
     &::before {
-        content: '\f118';
-        content: '\f0c0';
-        font-family: 'icomoon';
+        content: "\e82b";
+        font-family: 'Linearicons-Free';
         color: #ff6a6d;
     }
 }
@@ -1011,6 +1028,7 @@ button[type="submit"] {
     align-items: center;
 
     span {
+        // display: block;
         font-size: 15px;
         color: #999999;
         padding-left: 13px;
@@ -1164,23 +1182,27 @@ button[type="submit"] {
 
 .footer__col {
     max-width: 240px;
-     width: 100%;
+    width: 100%;
 
     &-logo {
+        display: block;
         margin-bottom: 25px;
     }
 
     &-menu {
         max-width: 160px;
     }
-    &-news{
-         max-width: 360px;
+
+    &-news {
+        max-width: 360px;
     }
+
     &-title {
         color: #ffffff;
         margin-bottom: 35px;
         font-size: 18px;
     }
+
     &-text {
         margin-bottom: 20px;
         font-size: 15px;
@@ -1197,6 +1219,8 @@ button[type="submit"] {
     padding-left: 30px;
     position: relative;
     font-size: 15px;
+    display: inline-block;
+
 
     &::before {
         content: '\f041';
@@ -1222,6 +1246,7 @@ button[type="submit"] {
 
 .footer__col-list {
     a {
+
         margin-bottom: 15px;
         color: #ababab;
         cursor: pointer;
@@ -1273,7 +1298,7 @@ button[type="submit"] {
     }
 
     &-link {
-
+        display: inline-block;
         width: 42px;
         height: 42px;
         border-radius: 21px;

@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>martplace</title>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -15,24 +14,17 @@
         <div class="header__top">
             <div class="container">
                 <div class="header__top-inner">
-                    <div class="header__logo">
-                        <a href="#">
-                            <img src="images/logo.png" alt="">
-                        </a>
-                    </div>
-
-                    <div class="header__btn">
-                        <a class="header__btn-seller" href="#">Become a Seller</a>
-                    </div>
+                    <a class="header__logo" href="#">
+                        <img src="images/logo.png" alt="">
+                    </a>
+                    <a class="header__btn-seller" href="#">Become a Seller</a>
                     <div class="header__account">
                         <a class="header__account-info" href="#">
                             <div class="header__account-avatar"
                                 style="background-image: url(images/content/icons/user.jpg);">
                             </div>
-                            <div>
-                                <span>Taofiq Hakim</span>
-                                <span class="header__account-total"> $20.45</span>
-                            </div>
+                            <span class="header__account-name">Taofiq Hakim</span>
+                            <span class="header__account-total"> $20.45</span>
                         </a>
                     </div>
                 </div>
@@ -62,7 +54,7 @@
                     </nav>
                     <div class="header__bottom-form">
                         <form>
-                            <input type="text" placeholder="Search product here..." required>
+                            <input type="search" placeholder="Search product here..." required>
                             <button type="submit">
                                 <img src="images/content/icons/search.png" alt="">
                             </button>
@@ -89,7 +81,7 @@
                     </div>
                     <div class="search__inner-box">
                         <form class="search__inner-form">
-                            <input type="text" placeholder="Search product here..." required>
+                            <input type="search" placeholder="Search product here..." required>
                             <select name="category">
                                 <option value="all">All Categories</option>
                                 <option value="">WordPress</option>
@@ -165,6 +157,10 @@
                         <button type="button" data-filter=".category-software">Software</button>
                     </div>
                     <div class="products__inner-holder">
+
+
+
+
                         <div class="product__item mix category-plugins category-new">
                             <div class="product__item-img"
                                 style="background-image:url(images/content/product-item.jpg);">
@@ -179,7 +175,7 @@
                                     <div class="product__item-author">
                                         <a class="avatar" href="#"
                                             style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                        <span>Theme-Valley</span>
+                                        <span class="theme-name">Theme-Valley</span>
                                     </div>
                                     <div class="product__item-category">
                                         <a class="content-logo"
@@ -195,30 +191,22 @@
                                 </div>
                             </div>
                             <div class="product__box">
-                                <div class="product__box-price">
-                                    <span>$20</span>
-                                </div>
+                                <span class="product__box-price">$20</span>
                                 <div class="product__box-like">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                        <path
-                                            d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                    </svg>
                                     <span>50</span>
                                 </div>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
                                 <div class="product__box-cart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path
-                                            d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                        <circle cx="8.5" cy="19.5" r="1.5" />
-                                        <circle cx="17.5" cy="19.5" r="1.5" />
-                                    </svg>
                                     <span>246</span>
                                 </div>
                             </div>
                         </div>
+
+
+
+                        <!-- 
                         <div class="product__item mix category-psd">
                             <div class="product__item-img"
                                 style="background-image:url(images/content/product-item.jpg);">
@@ -233,7 +221,7 @@
                                     <div class="product__item-author">
                                         <a class="avatar" href="#"
                                             style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                        <span>EchoTheme</span>
+                                        <span class="theme-name">EchoTheme</span>
                                     </div>
                                     <div class="product__item-category">
                                         <a class="content-logo"
@@ -248,9 +236,7 @@
                                 </div>
                             </div>
                             <div class="product__box">
-                                <div class="product__box-price">
-                                    <span>$20</span>
-                                </div>
+                                <span class="product__box-price">$20</span>
                                 <div class="product__box-like">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                         <path
@@ -286,7 +272,7 @@
                                     <div class="product__item-author">
                                         <a class="avatar" href="#"
                                             style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                        <span>Artcorner</span>
+                                        <span class="theme-name">Artcorner</span>
                                     </div>
                                     <div class="product__item-category">
                                         <a class="content-logo"
@@ -301,9 +287,7 @@
                                 </div>
                             </div>
                             <div class="product__box">
-                                <div class="product__box-price">
-                                    <span>$20</span>
-                                </div>
+                                <span class="product__box-price">$20</span>
                                 <div class="product__box-like">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                         <path
@@ -339,7 +323,7 @@
                                     <div class="product__item-author">
                                         <a class="avatar" href="#"
                                             style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                        <span>Design-Hub</span>
+                                        <span class="theme-name">Design-Hub</span>
                                     </div>
                                     <div class="product__item-category">
                                         <a class="content-logo"
@@ -355,9 +339,7 @@
                                 </div>
                             </div>
                             <div class="product__box">
-                                <div class="product__box-price">
-                                    <span>$20</span>
-                                </div>
+                                <span class="product__box-price">$20</span>
                                 <div class="product__box-like">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                         <path
@@ -393,7 +375,7 @@
                                     <div class="product__item-author">
                                         <a class="avatar" href="#"
                                             style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                        <span>AazzTech</span>
+                                        <span class="theme-name">AazzTech</span>
                                     </div>
                                     <div class="product__item-category">
                                         <a class="content-logo"
@@ -408,9 +390,7 @@
                                 </div>
                             </div>
                             <div class="product__box">
-                                <div class="product__box-price">
-                                    <span>$20</span>
-                                </div>
+                                <span class="product__box-price">$20</span>
                                 <div class="product__box-like">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                         <path
@@ -446,7 +426,7 @@
                                     <div class="product__item-author">
                                         <a class="avatar" href="#"
                                             style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                        <span>Coder-Lab</span>
+                                        <span class="theme-name">Coder-Lab</span>
                                     </div>
                                     <div class="product__item-category">
                                         <a class="content-logo"
@@ -462,9 +442,7 @@
                                 </div>
                             </div>
                             <div class="product__box">
-                                <div class="product__box-price">
-                                    <span>$20</span>
-                                </div>
+                                <span class="product__box-price">$20</span>
                                 <div class="product__box-like">
                                     <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                         <path
@@ -490,11 +468,11 @@
                     <div class="products__bottom-btn">
                         <button class="btn" type="button" data-filter=".category-new">All New Products</button>
                     </div>
-                </div>
-            </div>
+                </div> -->
+                    </div>
         </section>
         <!-- PRODUCT__SLIDER -->
-        <section class="product__slider">
+        <!-- <section class="product__slider">
             <div class="container">
                 <div class="product-slider__title title arrows">
                     Your Followers Feed
@@ -513,7 +491,7 @@
                                 <div class="product__item-author">
                                     <a class="avatar" href="#"
                                         style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                    <span>Coder-Lab</span>
+                                    <span class="theme-name">Coder-Lab</span>
                                 </div>
                                 <div class="product__item-category">
                                     <a class="content-logo"
@@ -528,9 +506,7 @@
                             </div>
                         </div>
                         <div class="product__box">
-                            <div class="product__box-price">
-                                <span>$20</span>
-                            </div>
+                            <span class="product__box-price">$20</span>
                             <div class="product__box-like">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                     <path
@@ -565,7 +541,7 @@
                                 <div class="product__item-author">
                                     <a class="avatar" href="#"
                                         style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                    <span>Coder-Lab</span>
+                                    <span class="theme-name">Coder-Lab</span>
                                 </div>
                                 <div class="product__item-category">
                                     <a class="content-logo"
@@ -580,9 +556,7 @@
                             </div>
                         </div>
                         <div class="product__box">
-                            <div class="product__box-price">
-                                <span>$20</span>
-                            </div>
+                            <span class="product__box-price">$20</span>
                             <div class="product__box-like">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                     <path
@@ -617,7 +591,7 @@
                                 <div class="product__item-author">
                                     <a class="avatar" href="#"
                                         style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                    <span>Coder-Lab</span>
+                                    <span class="theme-name">Coder-Lab</span>
                                 </div>
                                 <div class="product__item-category">
                                     <a class="content-logo"
@@ -632,9 +606,7 @@
                             </div>
                         </div>
                         <div class="product__box">
-                            <div class="product__box-price">
-                                <span>$20</span>
-                            </div>
+                            <span class="product__box-price">$20</span>
                             <div class="product__box-like">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                     <path
@@ -669,7 +641,7 @@
                                 <div class="product__item-author">
                                     <a class="avatar" href="#"
                                         style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                    <span>Coder-Lab</span>
+                                    <span class="theme-name">Coder-Lab</span>
                                 </div>
                                 <div class="product__item-category">
                                     <a class="content-logo"
@@ -684,9 +656,7 @@
                             </div>
                         </div>
                         <div class="product__box">
-                            <div class="product__box-price">
-                                <span>$20</span>
-                            </div>
+                            <span class="product__box-price">$20</span>
                             <div class="product__box-like">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                     <path
@@ -721,7 +691,7 @@
                                 <div class="product__item-author">
                                     <a class="avatar" href="#"
                                         style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                    <span>Coder-Lab</span>
+                                    <span class="theme-name">Coder-Lab</span>
                                 </div>
                                 <div class="product__item-category">
                                     <a class="content-logo"
@@ -736,9 +706,7 @@
                             </div>
                         </div>
                         <div class="product__box">
-                            <div class="product__box-price">
-                                <span>$20</span>
-                            </div>
+                            <span class="product__box-price">$20</span>
                             <div class="product__box-like">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                     <path
@@ -773,7 +741,7 @@
                                 <div class="product__item-author">
                                     <a class="avatar" href="#"
                                         style="background-image: url(images/content/icons/user1.jpg)"></a>
-                                    <span>Coder-Lab</span>
+                                    <span class="theme-name">Coder-Lab</span>
                                 </div>
                                 <div class="product__item-category">
                                     <a class="content-logo"
@@ -788,9 +756,7 @@
                             </div>
                         </div>
                         <div class="product__box">
-                            <div class="product__box-price">
-                                <span>$20</span>
-                            </div>
+                            <span class="product__box-price">$20</span>
                             <div class="product__box-like">
                                 <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
                                     <path
@@ -814,7 +780,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- INFO -->
         <section class="info">
             <div class="container">
@@ -855,7 +821,7 @@
             </div>
         </section>
         <!--preferences  -->
-        <section class="preferences">
+        <!-- <section class="preferences">
             <div class="container">
                 <div class="preferences__title caption">
                     Why Choose<span> MartPlace</span>
@@ -948,9 +914,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- OPTIONS-->
-        <section class="options">
+        <!-- <section class="options">
             <div class="container-fluid">
                 <div class="option__inner">
                     <div class="option__item">
@@ -994,9 +960,9 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!--    FEEDBACK -->
-        <section class="feedback">
+        <!-- <section class="feedback">
             <div class="container">
                 <div class="feedback__title caption">
                     Our Clients <span>Feedback</span>
@@ -1043,9 +1009,9 @@
                     <button class="btn" type="button">View All Reviews</button>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- NEWS -->
-        <section class="news">
+        <!-- <section class="news">
             <div class="container">
                 <div class="news__title caption">
                     Latest <span>News</span>
@@ -1133,7 +1099,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- support -->
         <section class="support">
             <div class="container-fluid">
@@ -1171,17 +1137,16 @@
                 </div>
             </div>
         </section>
+
         <!-- footer -->
         <footer class="footer">
             <div class="footer__content">
                 <div class="container">
                     <div class="footer__inner">
                         <div class="footer__col">
-                            <div class="footer__col-logo">
-                                <a href="#">
-                                    <img src="images/content/footerlogo.png" alt="">
-                                </a>
-                            </div>
+                            <a class="footer__col-logo" href="#">
+                                <img src="images/content/footerlogo.png" alt="">
+                            </a>
                             <div class="footer__col-text">
                                 Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque
                                 the mattis, leo quam.
