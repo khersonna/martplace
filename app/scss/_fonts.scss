@@ -1,9 +1,9 @@
 @font-face {
     font-family: "Quicksand-Regular", sans-serif;
-    src: url("./fonts/Quicksand-Regular.eot");
-    src: url("./fonts/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
-        url("./fonts/Quicksand-Regular.woff") format("woff"),
-        url("./fonts/Quicksand-Regular.woff2") format("woff2");
+    src: url("../fonts/Quicksand-Regular.eot");
+    src: url("../fonts/Quicksand-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Quicksand-Regular.woff") format("woff"),
+        url("../fonts/Quicksand-Regular.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 
@@ -11,42 +11,42 @@
 
 @font-face {
     font-family: "Quicksand-Medium", sans-serif;
-    src: url("./fonts/Quicksand-Medium.eot");
-    src: url("./fonts/Quicksand-Medium.eot?#iefix") format("embedded-opentype"),
-        url("./fonts/Quicksand-Medium.woff") format("woff"),
-        url("./fonts/Quicksand-Medium.woff2") format("woff2");
+    src: url("../fonts/Quicksand-Medium.eot");
+    src: url("../fonts/Quicksand-Medium.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Quicksand-Medium.woff") format("woff"),
+        url("../fonts/Quicksand-Medium.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Quicksand-SemiBold", sans-serif;
-    src: url("./fonts/Quicksand-SemiBold.eot");
-    src: url("./fonts/Quicksand-SemiBold.eot?#iefix") format("embedded-opentype"),
-        url("./fonts/Quicksand-SemiBold.woff") format("woff"),
-        url("./fonts/Quicksand-SemiBold.woff2") format("woff2");
+    src: url("../fonts/Quicksand-SemiBold.eot");
+    src: url("../fonts/Quicksand-SemiBold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Quicksand-SemiBold.woff") format("woff"),
+        url("../fonts/Quicksand-SemiBold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "Quicksand-Bold"sans-serif;
-    src: url("./fonts/Quicksand-Bold.eot");
-    src: url("./fonts/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
-        url("./fonts/Quicksand-Bold.woff") format("woff"),
-        url("./fonts/Quicksand-Bold.woff2") format("woff2");
+    src: url("../fonts/Quicksand-Bold.eot");
+    src: url("../fonts/Quicksand-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Quicksand-Bold.woff") format("woff"),
+        url("../fonts/Quicksand-Bold.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Linearicons-Free';
-    src: url('fonts/Linearicons-Free.eot?w118d');
-    src: url('fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
-        url('fonts/Linearicons-Free.woff2?w118d') format('woff2'),
-        url('fonts/Linearicons-Free.woff?w118d') format('woff'),
-        url('fonts/Linearicons-Free.ttf?w118d') format('truetype'),
-        url('fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
+    src: url('../fonts/Linearicons-Free.eot?w118d');
+    src: url('../fonts/Linearicons-Free.eot?#iefixw118d') format('embedded-opentype'),
+        url('../fonts/Linearicons-Free.woff2?w118d') format('woff2'),
+        url('../fonts/Linearicons-Free.woff?w118d') format('woff'),
+        url('../fonts/Linearicons-Free.ttf?w118d') format('truetype'),
+        url('../fonts/Linearicons-Free.svg?w118d#Linearicons-Free') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -201,6 +201,10 @@
     content: "\e829";
 }
 
+.lnr-book:before {
+    content: "\e828";
+}
+
 .lnr-exit:before {
     content: "\e820";
 }
@@ -213,13 +217,17 @@
     content: "\e87d";
 }
 
+.lnr-trash:before {
+    content: "\e811";
+}
+
 @font-face {
     font-family: 'icomoon';
-    src: url('fonts/icomoon.eot?203r0p');
-    src: url('fonts/icomoon.eot?203r0p#iefix') format('embedded-opentype'),
-        url('fonts/icomoon.ttf?203r0p') format('truetype'),
-        url('fonts/icomoon.woff?203r0p') format('woff'),
-        url('fonts/icomoon.svg?203r0p#icomoon') format('svg');
+    src: url('../fonts/icomoon.eot?203r0p');
+    src: url('../fonts/icomoon.eot?203r0p#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?203r0p') format('truetype'),
+        url('../fonts/icomoon.woff?203r0p') format('woff'),
+        url('../fonts/icomoon.svg?203r0p#icomoon') format('svg');
     font-weight: normal;
     font-style: normal;
     font-display: block;

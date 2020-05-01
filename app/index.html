@@ -142,8 +142,28 @@
         <!--  PRODUCTS -->
         <section class="products">
             <div class="container">
-                <div class="products__title title">Newest Release Products
-                    <span>Filter by:</span>
+                <div class="products__title title"> Newest Release Products
+                    <div class="products__filter">Filter by:
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9 24">
+                            <g>
+                                <path
+                                    d="M2.01 19.93C2.05 18.83 3.07 17.96 4.3 17.99C5.52 18.03 6.48 18.95 6.44 20.05C6.41 21.16 5.38 22.02 4.16 21.99C2.94 21.96 1.97 21.04 2.01 19.93ZM2.28 11.94C2.32 10.83 3.34 9.97 4.57 10C5.79 10.03 6.75 10.96 6.72 12.06C6.68 13.16 5.66 14.03 4.43 14C3.21 13.96 2.25 13.04 2.28 11.94ZM2.56 3.94C2.59 2.84 3.62 1.97 4.84 2.01C6.06 2.04 7.03 2.96 6.99 4.07C6.95 5.17 5.93 6.04 4.7 6C3.48 5.97 2.52 5.05 2.56 3.94Z" />
+                            </g>
+                        </svg>
+                        <ul class="products__filter-list arrow-up">
+                            <li class="products__filter-item"><a class="products__filter-link" href="#"> Trending
+                                    items</a>
+                            </li>
+                            <li class="products__filter-item"><a class="products__filter-link" href="#">Best seller</a>
+                            </li>
+                            <li class="products__filter-item"><a class="products__filter-link" href="#">Best rating</a>
+                            </li>
+                            <li class="products__filter-item"><a class="products__filter-link" href="#"> Low price</a>
+                            </li>
+                            <li class="products__filter-item"><a class="products__filter-link" href="#">High price</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="products__inner">
                     <div class="products__inner-btn ">
@@ -192,21 +212,17 @@
                             </div>
                             <div class="product__box">
                                 <span class="product__box-price">$20</span>
-                                <div class="product__box-like">
-                                    <span>50</span>
-                                </div>
+                                <span class="product__box-like">50</span>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
-                                <div class="product__box-cart">
-                                    <span>246</span>
-                                </div>
+                                <span class="product__box-cart">246</span>
                             </div>
                         </div>
 
 
 
-                        <!-- 
+
                         <div class="product__item mix category-psd">
                             <div class="product__item-img"
                                 style="background-image:url(images/content/product-item.jpg);">
@@ -237,25 +253,11 @@
                             </div>
                             <div class="product__box">
                                 <span class="product__box-price">$20</span>
-                                <div class="product__box-like">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                        <path
-                                            d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                    </svg>
-                                    <span>50</span>
-                                </div>
+                                <span class="product__box-like">50</span>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
-                                <div class="product__box-cart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path
-                                            d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                        <circle cx="8.5" cy="19.5" r="1.5" />
-                                        <circle cx="17.5" cy="19.5" r="1.5" />
-                                    </svg>
-                                    <span>246</span>
-                                </div>
+                                <span class="product__box-cart">246</span>
                             </div>
                         </div>
                         <div class="product__item mix category-site">
@@ -288,25 +290,11 @@
                             </div>
                             <div class="product__box">
                                 <span class="product__box-price">$20</span>
-                                <div class="product__box-like">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                        <path
-                                            d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                    </svg>
-                                    <span>50</span>
-                                </div>
+                                <span class="product__box-like">50</span>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
-                                <div class="product__box-cart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path
-                                            d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                        <circle cx="8.5" cy="19.5" r="1.5" />
-                                        <circle cx="17.5" cy="19.5" r="1.5" />
-                                    </svg>
-                                    <span>246</span>
-                                </div>
+                                <span class="product__box-cart">246</span>
                             </div>
                         </div>
                         <div class="product__item mix category-plugins category-new">
@@ -340,25 +328,11 @@
                             </div>
                             <div class="product__box">
                                 <span class="product__box-price">$20</span>
-                                <div class="product__box-like">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                        <path
-                                            d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                    </svg>
-                                    <span>50</span>
-                                </div>
+                                <span class="product__box-like">50</span>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
-                                <div class="product__box-cart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path
-                                            d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                        <circle cx="8.5" cy="19.5" r="1.5" />
-                                        <circle cx="17.5" cy="19.5" r="1.5" />
-                                    </svg>
-                                    <span>246</span>
-                                </div>
+                                <span class="product__box-cart">246</span>
                             </div>
                         </div>
                         <div class="product__item mix category-psd">
@@ -391,25 +365,11 @@
                             </div>
                             <div class="product__box">
                                 <span class="product__box-price">$20</span>
-                                <div class="product__box-like">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                        <path
-                                            d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                    </svg>
-                                    <span>50</span>
-                                </div>
+                                <span class="product__box-like">50</span>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
-                                <div class="product__box-cart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path
-                                            d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                        <circle cx="8.5" cy="19.5" r="1.5" />
-                                        <circle cx="17.5" cy="19.5" r="1.5" />
-                                    </svg>
-                                    <span>246</span>
-                                </div>
+                                <span class="product__box-cart">246</span>
                             </div>
                         </div>
                         <div class="product__item mix category-site category-new">
@@ -443,36 +403,22 @@
                             </div>
                             <div class="product__box">
                                 <span class="product__box-price">$20</span>
-                                <div class="product__box-like">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                        <path
-                                            d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                    </svg>
-                                    <span>50</span>
-                                </div>
+                                <span class="product__box-like">50</span>
                                 <div class="product__box-star">
                                     <div class="rate-star"></div>
                                 </div>
-                                <div class="product__box-cart">
-                                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                        <path
-                                            d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                        <circle cx="8.5" cy="19.5" r="1.5" />
-                                        <circle cx="17.5" cy="19.5" r="1.5" />
-                                    </svg>
-                                    <span>246</span>
-                                </div>
+                                <span class="product__box-cart">246</span>
                             </div>
                         </div>
                     </div>
                     <div class="products__bottom-btn">
                         <button class="btn" type="button" data-filter=".category-new">All New Products</button>
                     </div>
-                </div> -->
-                    </div>
+                </div>
+            </div>
         </section>
         <!-- PRODUCT__SLIDER -->
-        <!-- <section class="product__slider">
+        <section class="product__slider">
             <div class="container">
                 <div class="product-slider__title title arrows">
                     Your Followers Feed
@@ -507,25 +453,11 @@
                         </div>
                         <div class="product__box">
                             <span class="product__box-price">$20</span>
-                            <div class="product__box-like">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                    <path
-                                        d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                </svg>
-                                <span>50</span>
-                            </div>
+                            <span class="product__box-like">50</span>
                             <div class="product__box-star">
                                 <div class="rate-star"></div>
                             </div>
-                            <div class="product__box-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path
-                                        d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                    <circle cx="8.5" cy="19.5" r="1.5" />
-                                    <circle cx="17.5" cy="19.5" r="1.5" />
-                                </svg>
-                                <span>246</span>
-                            </div>
+                            <span class="product__box-cart">246</span>
                         </div>
                     </div>
                     <div class="product__item">
@@ -557,25 +489,11 @@
                         </div>
                         <div class="product__box">
                             <span class="product__box-price">$20</span>
-                            <div class="product__box-like">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                    <path
-                                        d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                </svg>
-                                <span>50</span>
-                            </div>
+                            <span class="product__box-like">50</span>
                             <div class="product__box-star">
                                 <div class="rate-star"></div>
                             </div>
-                            <div class="product__box-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path
-                                        d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                    <circle cx="8.5" cy="19.5" r="1.5" />
-                                    <circle cx="17.5" cy="19.5" r="1.5" />
-                                </svg>
-                                <span>246</span>
-                            </div>
+                            <span class="product__box-cart">246</span>
                         </div>
                     </div>
                     <div class="product__item">
@@ -607,25 +525,11 @@
                         </div>
                         <div class="product__box">
                             <span class="product__box-price">$20</span>
-                            <div class="product__box-like">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                    <path
-                                        d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                </svg>
-                                <span>50</span>
-                            </div>
+                            <span class="product__box-like">50</span>
                             <div class="product__box-star">
                                 <div class="rate-star"></div>
                             </div>
-                            <div class="product__box-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path
-                                        d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                    <circle cx="8.5" cy="19.5" r="1.5" />
-                                    <circle cx="17.5" cy="19.5" r="1.5" />
-                                </svg>
-                                <span>246</span>
-                            </div>
+                            <span class="product__box-cart">246</span>
                         </div>
                     </div>
                     <div class="product__item">
@@ -657,25 +561,11 @@
                         </div>
                         <div class="product__box">
                             <span class="product__box-price">$20</span>
-                            <div class="product__box-like">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                    <path
-                                        d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                </svg>
-                                <span>50</span>
-                            </div>
+                            <span class="product__box-like">50</span>
                             <div class="product__box-star">
                                 <div class="rate-star"></div>
                             </div>
-                            <div class="product__box-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path
-                                        d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                    <circle cx="8.5" cy="19.5" r="1.5" />
-                                    <circle cx="17.5" cy="19.5" r="1.5" />
-                                </svg>
-                                <span>246</span>
-                            </div>
+                            <span class="product__box-cart">246</span>
                         </div>
                     </div>
                     <div class="product__item">
@@ -707,25 +597,11 @@
                         </div>
                         <div class="product__box">
                             <span class="product__box-price">$20</span>
-                            <div class="product__box-like">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                    <path
-                                        d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                </svg>
-                                <span>50</span>
-                            </div>
+                            <span class="product__box-like">50</span>
                             <div class="product__box-star">
                                 <div class="rate-star"></div>
                             </div>
-                            <div class="product__box-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path
-                                        d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                    <circle cx="8.5" cy="19.5" r="1.5" />
-                                    <circle cx="17.5" cy="19.5" r="1.5" />
-                                </svg>
-                                <span>246</span>
-                            </div>
+                            <span class="product__box-cart">246</span>
                         </div>
                     </div>
                     <div class="product__item">
@@ -757,30 +633,16 @@
                         </div>
                         <div class="product__box">
                             <span class="product__box-price">$20</span>
-                            <div class="product__box-like">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="96" viewBox="0 0 96 96" width="96">
-                                    <path
-                                        d="M87.6 15c-9.4-9.4-24.6-9.4-33.9 0L48 20.7l-5.7-5.7c-9.4-9.4-24.6-9.4-33.9 0 -9.4 9.4-9.4 24.6 0 33.9l5.7 5.7L48 88.6l33.9-33.9 5.7-5.7C97 39.6 97 24.4 87.6 15zM70.6 54.6L48 77.3 25.4 54.6 14.1 43.3c-6.2-6.2-6.2-16.4 0-22.6 6.2-6.2 16.4-6.2 22.6 0L48 32l11.3-11.3c6.2-6.2 16.4-6.2 22.6 0 6.2 6.3 6.2 16.4 0 22.6L70.6 54.6z" />
-                                </svg>
-                                <span>50</span>
-                            </div>
+                            <span class="product__box-like">50</span>
                             <div class="product__box-star">
                                 <div class="rate-star"></div>
                             </div>
-                            <div class="product__box-cart">
-                                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24">
-                                    <path
-                                        d="M20.8 5.3C20.6 5.1 20.3 5 20 5H6.2L6 3.8C5.9 3.4 5.5 3 5 3H2.8c-0.6 0-1 0.4-1 1s0.4 1 1 1h1.4l1.9 11.2c0 0 0 0.1 0 0.1 0 0.1 0 0.1 0.1 0.2 0 0.1 0.1 0.1 0.1 0.2 0 0 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.1 0.2 0.1 0 0 0.1 0 0.1 0.1C6.7 17 6.9 17 7 17 7 17 18 17 18 17c0.6 0 1-0.4 1-1s-0.4-1-1-1H7.8l-0.2-1H19c0.5 0 0.9-0.4 1-0.9l1-7C21 5.9 20.9 5.6 20.8 5.3zM18.8 7l-0.3 2H15V7H18.8zM14 7v2h-3V7H14zM14 10v2h-3v-2H14zM10 7v2H7C6.9 9 6.9 9 6.9 9L6.5 7H10zM7 10H10v2H7.3L7 10zM15 12v-2h3.4l-0.3 2H15z" />
-                                    <circle cx="8.5" cy="19.5" r="1.5" />
-                                    <circle cx="17.5" cy="19.5" r="1.5" />
-                                </svg>
-                                <span>246</span>
-                            </div>
+                            <span class="product__box-cart">246</span>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- INFO -->
         <section class="info">
             <div class="container">
@@ -821,7 +683,7 @@
             </div>
         </section>
         <!--preferences  -->
-        <!-- <section class="preferences">
+        <section class="preferences">
             <div class="container">
                 <div class="preferences__title caption">
                     Why Choose<span> MartPlace</span>
@@ -914,9 +776,9 @@
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- OPTIONS-->
-        <!-- <section class="options">
+        <section class="options">
             <div class="container-fluid">
                 <div class="option__inner">
                     <div class="option__item">
@@ -934,9 +796,7 @@
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                             the mattis, leo quam aliquet diamcongue is laoreet elit metus.
                         </div>
-                        <div class="option__item-btn">
-                            <a class="option__item-link" href=" #">Become an Author</a>
-                        </div>
+                        <a class="option__item-link" href=" #">Become an Author</a>
                     </div>
 
                     <div class="option__item option2">
@@ -954,15 +814,13 @@
                             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
                             the mattis, leo quam aliquet diamcongue is laoreet elit metus.
                         </div>
-                        <div class="option__item-btn">
-                            <a class="option__item-link " href=" #">Start Shopping</a>
-                        </div>
+                        <a class="option__item-link " href=" #">Start Shopping</a>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!--    FEEDBACK -->
-        <!-- <section class="feedback">
+        <section class="feedback">
             <div class="container">
                 <div class="feedback__title caption">
                     Our Clients <span>Feedback</span>
@@ -1009,9 +867,9 @@
                     <button class="btn" type="button">View All Reviews</button>
                 </div>
             </div>
-        </section> -->
-        <!-- NEWS -->
-        <!-- <section class="news">
+        </section>
+        <!--  NEWS  -->
+        <section class="news">
             <div class="container">
                 <div class="news__title caption">
                     Latest <span>News</span>
@@ -1036,14 +894,12 @@
                             </div>
                         </div>
                         <div class="news__box">
-                            <div class="news__box-date">
-                                <span>24 Feb 2017</span>
+                            <div class="news__firstwrap">
+                                <time class="news__box-date" datetime="2017-02-24">24 Feb 2017</time>
                             </div>
-                            <div class="news__box-comment">
-                                <span>45</span>
-                            </div>
-                            <div class="news__box-view">
-                                <span>345</span>
+                            <div class="news__secondwrap">
+                                <span class="news__box-comment">45</span>
+                                <span class="news__box-view">345</span>
                             </div>
                         </div>
                     </div>
@@ -1061,14 +917,12 @@
                             </div>
                         </div>
                         <div class="news__box">
-                            <div class="news__box-date">
-                                <span>24 Feb 2017</span>
+                            <div class="news__firstwrap">
+                                <time class="news__box-date" datetime="2017-02-24">24 Mar 2017</time>
                             </div>
-                            <div class="news__box-comment">
-                                <span>45</span>
-                            </div>
-                            <div class="news__box-view">
-                                <span>345</span>
+                            <div class="news__secondwrap">
+                                <span class="news__box-comment">45</span>
+                                <span class="news__box-view">345</span>
                             </div>
                         </div>
                     </div>
@@ -1086,20 +940,18 @@
                             </div>
                         </div>
                         <div class="news__box">
-                            <div class="news__box-date">
-                                <span>24 Feb 2017</span>
+                            <div class="news__firstwrap">
+                                <time class="news__box-date" datetime="2016-12-20">20 Dec 2016</time>
                             </div>
-                            <div class="news__box-comment">
-                                <span>45</span>
-                            </div>
-                            <div class="news__box-view">
-                                <span>345</span>
+                            <div class="news__secondwrap">
+                                <span class="news__box-comment">45</span>
+                                <span class="news__box-view">345</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
         <!-- support -->
         <section class="support">
             <div class="container-fluid">
@@ -1122,6 +974,7 @@
                     </div>
                 </div>
             </div>
+            </div>
         </section>
         <!-- join -->
         <section class="join">
@@ -1133,13 +986,13 @@
                     <div class="join__item-text">
                         Over 25,000 designers and developers trust the MartPlace.
                     </div>
-                    <a class="join__item-btn  href=" #> Join Us Today</a>
+                    <a class="join__item-btn" href="#"> Join Us Today</a>
                 </div>
             </div>
         </section>
 
         <!-- footer -->
-        <footer class="footer">
+        <footer class=" footer">
             <div class="footer__content">
                 <div class="container">
                     <div class="footer__inner">
@@ -1148,7 +1001,8 @@
                                 <img src="images/content/footerlogo.png" alt="">
                             </a>
                             <div class="footer__col-text">
-                                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut scel erisque
+                                Nunc placerat mi id nisi interdum they mollis. Praesent pharetra, justo ut
+                                scel erisque
                                 the mattis, leo quam.
                             </div>
                             <a class="footer__info footer__info-phone" href="tel:61383766284">
@@ -1157,35 +1011,38 @@
                             <a class="footer__info footer__info-mail" href="mailto:support@aazztech.com">
                                 support@aazztech.com
                             </a>
-                            <div class="footer__info footer__info-location ">
+                            <address class="footer__info footer__info-location ">
                                 PO Box 16122 Collins Street West
                                 Victoria 8007 Australia
-                            </div>
+                            </address>
                         </div>
 
 
                         <div class="footer__col footer__col-menu">
                             <div class="footer__col-title">Our Company </div>
                             <ul class="footer__col-list">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">How It Work</a></li>
-                                <li><a href="#"> Affiliates</a></li>
-                                <li><a href="#">Testimonials</a></li>
-                                <li><a href="#"> Contact Us</a></li>
-                                <li><a href="#">Copyright Notice</a></li>
-                                <li><a href="#">Blog</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">About Us</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">How It Work</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#"> Affiliates</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Testimonials</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#"> Contact Us</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Copyright Notice</a>
+                                </li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Blog</a></li>
                             </ul>
                         </div>
                         <div class="footer__col footer__col-menu">
                             <div class="footer__col-title">Help Support</div>
                             <ul class="footer__col-list">
-                                <li><a href="#">Support Forum</a></li>
-                                <li><a href="#">Terms & Conditions</a></li>
-                                <li><a href="#">Support Policy</a></li>
-                                <li><a href="#">Refund Policy</a></li>
-                                <li><a href="#"> FAQs</a></li>
-                                <li><a href="#">Buyers Faq</a></li>
-                                <li><a href="#"> Sellers Faq</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Support Forum</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Terms & Conditions</a>
+                                </li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Support Policy</a>
+                                </li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Refund Policy</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#"> FAQs</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#">Buyers Faq</a></li>
+                                <li class="footer__col-item"><a class="footer__col-link" href="#"> Sellers Faq</a></li>
 
                             </ul>
                         </div>
@@ -1193,7 +1050,8 @@
                         <div class="footer__col footer__col-news ">
                             <div class="footer__col-title">Newsletter</div>
                             <div class="footer__col-text">
-                                Subscribe to get the latest news, update and offer information. Don't worry, we won't
+                                Subscribe to get the latest news, update and offer information. Don't worry,
+                                we won't
                                 send spam!
                             </div>
                             <div class="footer__form">
