@@ -58,3 +58,39 @@ body {
     margin: 0 auto;
     padding: 0 30px;
 }
+
+
+.breadcrumbs__list {
+    text-align: center;
+    line-height: 2px;
+
+    &-item {
+        display: inline-block;
+        position: relative;
+        @include f300;
+        font-size: 15px;
+
+        &+.breadcrumbs__list-item {
+            padding-left: 24px;
+
+            &:before {
+                position: absolute;
+                content: '/';
+                color: #ffffff;
+                left: 10px;
+            }
+        }
+
+        &:last-child {
+
+            a,
+            span {
+                color: #bfcad7;
+            }
+        }
+    }
+
+    &-link {
+        color: #ffffff;
+    }
+}
