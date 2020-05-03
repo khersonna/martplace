@@ -26,6 +26,17 @@ $(function () {
         prefix: "$"
     });
 
+    $('.lnr-list').on('click', function () {
+        $('.product__item').addClass('list');
+        $('.lnr-list').addClass('active');
+        $('.lnr-frame-expand').removeClass('active');
+    });
+    $('.lnr-frame-expand').on('click', function () {
+        $('.product__item').removeClass('list');
+        $('.lnr-frame-expand').addClass('active');
+        $('.lnr-list').removeClass('active');
+
+    });
 
 
     var miver = mixitup('.products__inner-holder');
