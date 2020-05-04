@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>products</title>
+  <title>favourites</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -224,9 +224,6 @@
 
               </div>
 
-
-
-
             </div>
           </div>
         </div>
@@ -349,39 +346,49 @@
         </div>
       </header>
       <main>
-        <section class="page-search">
-          <div class="container">
-            <div class="page-search__inner">
-              <div class="page-search__inner-title">
-                <span>4,572</span> wordpress themes, made with love
-              </div>
-              <div class="header__bottom-form page-search__form">
-                <form>
-                  <input type="search" placeholder="Search product here..." required>
-                  <button class="search__btn" type="submit">Search</button>
-                </form>
-              </div>
-            </div>
-          </div>
+        <section class="page-search favourite">
           <div class="breadcrumbs">
             <div class="container">
               <div class="breadcrumbs__inner">
                 <ul class="breadcrumbs__list">
                   <li class="breadcrumbs__list-item"><a class="breadcrumbs__list-link" href="#">Home</a></li>
-                  <li class="breadcrumbs__list-item"><span class="breadcrumbs__list-link">Category Page Grid</span></li>
+                  <li class="breadcrumbs__list-item"><span class="breadcrumbs__list-link">Favorites</span></li>
                 </ul>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="page-search__inner">
+              <div class="page-search__inner-title">
+                Your Favourites
               </div>
             </div>
           </div>
         </section>
 
-        <section class="product-page" style=" background-image: url(images/content/bg-grey.jpg);">
-          <div class="product-page__top">
+        <section class="favourite-page" style=" background-image: url(images/content/bg-grey.jpg);">
+          <div class="favourites-page__top">
             <div class="container">
               <div class="product-page__top-inner">
-                <div class="product-page__sort">
-                  <button class="product-page__sort-btn active">New Products</button>
-                  <button class="product-page__sort-btn">Popular Products</button>
+                <div class="favourites-page__top-title"><span>570 </span> Favourites Found</div>
+                <div class="favourites-page__top-filter ">Filter By
+                  <ul class="favourites-page__top-menu arrow-up">
+                    <li class="favourites-page__top-item"><a class="favourites-page__top-link" href="#"> Popular
+                        items</a>
+                    </li>
+                    <li class="favourites-page__top-item"><a class="favourites-page__top-link" href="#">New items</a>
+                    </li>
+                    <li class="favourites-page__top-item"><a class="favourites-page__top-link" href="#"> Best
+                        seller</a>
+                    </li>
+                    <li class="favourites-page__top-item"><a class="favourites-page__top-link" href="#">Best
+                        rating</a>
+                    </li>
+                    <li class="favourites-page__top-item"><a class="favourites-page__top-link" href="#">Low price</a>
+                    </li>
+                    <li class="favourites-page__top-item"><a class="favourites-page__top-link" href="#">High price</a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="product-page__wrap">
                   <form class="product-page__form">
@@ -406,435 +413,342 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="product-page__inner">
-              <aside class="product-page-aside">
-                <div class="category aside__item">
-                  <div class="aside__title ">
-                    Categories
+          <div class="favourites-page__content">
+            <div class="container">
+              <div class="favourites-page___items">
+
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
                   </div>
-                  <ul class="category__list">
-                    <li class="category__list-item"><a class="category__list-link" href="#">Wordpress</a>
-                      <span>35</span>
-                    </li>
-                    <li class="category__list-item"><a class="category__list-link" href="#">Landing Page</a>
-                      <span>45</span>
-                    </li>
-                    <li class="category__list-item"><a class="category__list-link" href="#">Psd Template</a>
-                      <span>13</span>
-                    </li>
-                    <li class="category__list-item"><a class="category__list-link" href="#"> Plugins</a> <span>08</span>
-                    </li>
-                    <li class="category__list-item"><a class="category__list-link" href="#">HTML Template</a>
-                      <span>34</span>
-                    </li>
-                    <li class="category__list-item"><a class="category__list-link" href="#">Components</a> <span>
-                        78</span>
-                    </li>
-                    <li class="category__list-item"><a class="category__list-link" href="#">Joomla Template</a> <span>
-                        26</span>
-                    </li>
-                  </ul>
-                </div>
-                <div class="filter aside__item">
-                  <div class="aside__title ">
-                    Filter Products
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <a class="theme-name">Theme-Valley</a>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
                   </div>
-                  <form class="flter__form">
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="trend">Trending
-                      Products</label>
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="popular">Popular
-                      Products</label>
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="new">New
-                      Products</label>
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="sellers">Best
-                      Seller</label>
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="rate">Best
-                      Rating</label>
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="low-price">Low
-                      Price</label>
-                    <label class="flter__form-option"> <input name="filter" type="radio" value="high-price">High
-                      Price</label>
-                  </form>
-                </div>
-
-                <div class="price-range aside__item">
-                  <div class="aside__title ">
-                    Pricing Range
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
                   </div>
-                  <form class="price-range__form">
-                    <input type="text" class="js-range-slider" name="my_range" value="" />
-                    <button class="price-range__update" type="submit"> Search Update </button>
-                  </form>
                 </div>
-
-              </aside>
-              <div class="product-page__content">
-                <div class="product-page__items">
-                  <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-
-                    <div class="product__item-content">
-                      <div class="product-item__cover">
-                        <div class="product__item-title">
-                          Finance and Consulting
-                          Business Theme
-                        </div>
-                        <div class="product__item-name">
-                          <div class="product__item-author">
-                            <a class="avatar" href="#"
-                              style="background-image: url(images/content/icons/user1.jpg)"></a>
-                            <span class="theme-name">Theme-Valley</span>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra...
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                        <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
                   </div>
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
                     </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
                       </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                       <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-
-                  </div> -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
                       <div class="product__item-category">
                         <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
                           href="#"></a>
                         <a class="content-name">Plugin</a>
                       </div>
                     </div>
-                  </div> -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
                     </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
                     </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                        <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                       <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                       <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                        <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-                  </div>  -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                        <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-                  </div> -->
-                  <!-- <div class="product__item">
-                    <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
-                      <a href="#" class="product__item-btn">More Info</a>
-                      <a href="#" class="product__item-btn">Live Demo</a>
-                    </div>
-                    <div class="product__item-content">
-                      <div class="product__item-title">
-                        Finance and Consulting
-                        Business Theme
-                      </div>
-                      <div class="product__item-name">
-                        <div class="product__item-author">
-                          <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
-                          <span class="theme-name">Theme-Valley</span>
-                        </div>
-                      </div>
-                      <div class="product__item-info">
-                        Nunc placerat mi id nisi interdum mollis.
-                        Praesent pharetra, justo ut scelerisque
-                        the mattis, leo quam aliquet congue.
-                      </div>
-                      <div class="producr-page__holder">
-                        <div class="product__box-star">
-                          <div class="rate-star"></div>
-                        </div>
-                        <span class="product__box-cart">246</span>
-                      </div>
-                    </div>
-                    <div class="product__box">
-                      <span class="product__box-price">$20</span>
-                      <span class="product__box-like">50</span>
-                      <div class="product__item-category">
-                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
-                          href="#"></a>
-                        <a class="content-name">Plugin</a>
-                      </div>
-                    </div>
-                  </div> -->
+                    <span class="product__box-cart">246</span>
+                  </div>
                 </div>
-
-                <div class="pagination">
-                  <ul class="pagination__list">
-                    <li class="pagination__list-item"><a class=" pagination__list-link lnr-arrow-left" href="#"></a>
-                    </li>
-                    <li class="pagination__list-item"><span class="pagination__list-link active" href="#">1</span></li>
-                    <li class="pagination__list-item"><a class="pagination__list-link" href="#">2</a></li>
-                    <li class="pagination__list-item"><a class="pagination__list-link" href="#">...</a></li>
-                    <li class="pagination__list-item"><a class="pagination__list-link" href="#">8</a></li>
-                    <li class="pagination__list-item"><a class=" pagination__list-link lnr-arrow-right" href="#"></a>
-                    </li>
-                  </ul>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
+                </div>
+                <div class="product__item">
+                  <div class="product__item-img" style="background-image:url(images/content/product-item.jpg);">
+                    <a href="#" class="product__item-btn">More Info</a>
+                    <a href="#" class="product__item-btn">Live Demo</a>
+                  </div>
+                  <div class="product__item-content">
+                    <div class="product__item-title">
+                      E-commerce Shopping Cart
+                    </div>
+                    <div class="product__item-name">
+                      <div class="product__item-author">
+                        <a class="avatar" href="#" style="background-image: url(images/content/icons/user1.jpg)"></a>
+                        <span class="theme-name">Theme-Valley</span>
+                      </div>
+                      <div class="product__item-category">
+                        <a class="content-logo" style="background-image: url(images/content/icons/wordpress.jpg);"
+                          href="#"></a>
+                        <a class="content-name">Plugin</a>
+                      </div>
+                    </div>
+                    <div class="product__item-info">
+                      Nunc placerat mi id nisi interdum mollis.
+                      Praesent pharetra, justo ut scelerisque
+                      the mattis, leo quam aliquet congue.
+                    </div>
+                  </div>
+                  <div class="product__box">
+                    <span class="product__box-price">$20</span>
+                    <span class="product__box-like">50</span>
+                    <div class="product__box-star">
+                      <div class="rate-star"></div>
+                    </div>
+                    <span class="product__box-cart">246</span>
+                  </div>
                 </div>
               </div>
+              <div class="pagination">
+                <ul class="pagination__list">
+                  <li class="pagination__list-item"><a class="pagination__list-link lnr-arrow-left" href="#"></a>
+                  </li>
+                  <li class="pagination__list-item"><span class="pagination__list-link active" href="#">1</span></li>
+                  <li class="pagination__list-item"><a class="pagination__list-link" href="#">2</a></li>
+                  <li class="pagination__list-item"><a class="pagination__list-link" href="#">...</a></li>
+                  <li class="pagination__list-item"><a class="pagination__list-link" href="#">8</a></li>
+                  <li class="pagination__list-item"><a class=" pagination__list-link lnr-arrow-right" href="#"></a>
+                  </li>
+                </ul>
+              </div>
             </div>
-          </div>
+
+
+
         </section>
 
 
