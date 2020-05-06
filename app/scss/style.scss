@@ -2152,7 +2152,7 @@
         @include f300;
     }
 
-    span {
+    &-subtitle {
         @include f500;
     }
 }
@@ -2744,3 +2744,184 @@
 }
 
 // end page terms
+
+// start pricing
+
+.page-pricing {
+    padding: 120px 0;
+}
+
+.page-pricing__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-pricing__box {
+    padding: 25px 30px 30px;
+    max-width: 360px;
+    border-radius: 3px;
+    box-shadow: 0px 2px 2px rgba(108, 111, 115, 0.1);
+    background-color: #ffffff;
+    border-top: 3px solid $pink;
+}
+
+.page-pricing__box.agency {
+    border-color: #feb71d;
+}
+
+.page-pricing__box.business {
+    border-color: $blue;
+}
+
+.page-pricing__title {
+    font-size: 24px;
+    color: #000000;
+    @include f500;
+    border-bottom: 1px solid #e8ebf0;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.page-pricing__price {
+    font-size: 36px;
+    color: #000000;
+    text-align: center;
+    padding: 29px 0px 48px;
+}
+
+.page-pricing__date {
+    font-size: 16px;
+    color: $text;
+}
+
+.page-pricing__currency {
+    font-size: 21px;
+}
+
+.page-pricing__item {
+    padding-bottom: 21px;
+    padding-left: 23px;
+    position: relative;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
+
+    &::before {
+        position: absolute;
+        left: 0;
+        top: 4px;
+        content: "\f1db";
+        font-family: 'icomoon';
+        font-size: 10px;
+    }
+
+}
+
+.page-pricing__item.lnr-question {
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: "\e87d";
+        font-family: 'Linearicons-Free';
+        margin-left: 10px;
+    }
+}
+
+.page-pricing__color {
+    color: #000000;
+    @include f500;
+}
+
+.page-pricing__btn {
+    font-size: 18px;
+    min-width: 300px;
+    padding: 16px 80px;
+    color: #ffffff;
+    background-color: $pink;
+}
+
+.page-pricing__btn.business {
+    background-color: $blue;
+}
+
+.page-pricing__btn.agency {
+    background-color: #feb71d;
+}
+
+// end pricing
+// start how it works
+
+
+.page-search__inner-title.works {
+    font-size: 30px;
+    @include f300;
+    padding-bottom: 55px;
+}
+
+.page-search__inner-subtitle.works {
+    display: block;
+    padding-bottom: 24px;
+    @include f500;
+
+
+}
+
+.works__item {
+    padding: 100px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.works__item.upload {
+    background-color: #eff1f5;
+}
+
+.works__item-img {
+    max-width: 450px;
+    height: 350px;
+
+}
+
+.works__box {
+    padding-left: 50px;
+}
+
+.works__box.upload {
+    padding-right: 50px;
+}
+
+.works__box-title {
+    font-size: 30px;
+    color: #000000;
+    padding-bottom: 46px;
+}
+
+.works__box-text {
+    max-width: 445px;
+    margin-bottom: 45px;
+    line-height: 30px;
+}
+
+.works__box-btn {
+
+    color: #ffffff;
+    padding: 18px 35px;
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: $blue;
+
+    &:hover {
+        color: $blue;
+        background-color: #fff;
+    }
+}
+
+
+
+// end how it works
