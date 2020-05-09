@@ -3626,3 +3626,296 @@
 }
 
 // blog-page end
+
+//  start page contacts
+.contacts,
+.login,
+.recover-pass,
+.creacte-account {
+    background-color: #eff1f5;
+}
+
+.contacts__inner {
+    padding: 120px 0;
+}
+
+.contacts__items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contacts__item {
+    max-width: 360px;
+    width: 100%;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 2px 2px rgba(108, 111, 115, 0.1);
+    padding: 50px 62px;
+    margin-bottom: 50px;
+}
+
+.contacts__item-title {
+    font-size: 20px;
+    color: #000000;
+    @include f500;
+    text-align: center;
+    padding-bottom: 40px;
+    position: relative;
+    padding-top: 98px;
+
+    &::before {
+        position: absolute;
+        content: "\e833";
+        font-family: 'Linearicons-Free';
+        color: $blue;
+        top: 15%;
+        left: 50%;
+        font-size: 48px;
+        transform: translate(-50%, -50%);
+
+    }
+
+}
+
+.contacts__item-title.phone::before {
+    content: "\e831";
+    font-family: 'Linearicons-Free';
+}
+
+.contacts__item-title.mail::before {
+    content: "\e81a";
+    font-family: 'Linearicons-Free';
+}
+
+.contacts__numb,
+.contacts__adress {
+    display: block;
+    text-align: center;
+}
+
+.forms {
+    background-color: #fff;
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 2px 2px rgba(108, 111, 115, 0.1);
+    padding: 60px 0;
+}
+
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    color: #000000;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8ebf0;
+}
+
+.contacts__form-all {
+    padding-top: 40px;
+    max-width: 750px;
+    width: 100%;
+    margin: 0px auto;
+    outline: none;
+
+    input {
+        height: 47px;
+        min-width: 360px;
+        padding: 16px 50px;
+        outline: none;
+        margin-bottom: 30px;
+        border: 1px solid #e7e7e7;
+
+        &+input {
+            margin-left: 25px;
+        }
+
+        &::placeholder {
+            color: #9e9e9e;
+        }
+    }
+
+
+
+    textarea {
+        max-width: 750px;
+        width: 100%;
+        height: 130px;
+        outline: none;
+        border-color: #e7e7e7;
+        padding: 16px 50px;
+        margin-bottom: 30px;
+        resize: none;
+
+        &::placeholder {
+            color: #9e9e9e;
+        }
+    }
+}
+
+.form__btn {
+    max-width: 170px;
+    width: 100%;
+    display: block;
+    margin: 0px auto;
+    background-color: $blue;
+    color: #ffffff;
+    border-radius: 25px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 17px 33px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+
+    &:hover {
+        color: $blue;
+        background-color: #eff1f5;
+    }
+}
+
+.contacts__map {
+    width: 100%;
+    height: 400px;
+}
+
+
+// end page contacts
+
+//start page login
+.login__inner {
+    padding: 70px 0px 120px;
+}
+
+.login__form {
+    max-width: 555px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+.login__sub-title {
+    padding-top: 26px;
+    display: block;
+    font-size: 16px;
+    color: $text;
+}
+
+.login__form-all {
+    padding: 30px 50px 0px;
+
+    .input-sign {
+        display: block;
+        font-size: 16px;
+        @include f500;
+        color: #000000;
+        padding-bottom: 15px;
+    }
+
+    .form__input {
+        max-width: 450px;
+        width: 100%;
+        padding: 16px 20px;
+        margin-bottom: 30px;
+        height: 52px;
+        border: none;
+        background-color: #f4f5f8;
+        outline: none;
+
+        &::placeholder {
+            color: #898f96;
+        }
+    }
+}
+
+//start checkbox
+
+.form__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    margin: 10px 0 0 20px;
+}
+
+.form__checkbox+label {
+    position: relative;
+    padding: 0 0 0 32px;
+    cursor: pointer;
+}
+
+.form__checkbox+label:before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: $blue;
+}
+
+.form__checkbox+label:after {
+    content: "\f00c";
+    font-family: 'icomoon';
+    position: absolute;
+    top: -3px;
+    left: 3px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.form__checkbox:checked+label:before {
+    background: $blue;
+}
+
+.form__checkbox:checked+label:after {
+    left: 20px;
+}
+
+.login__btn.form__btn {
+    margin: 30px 0px 30px 0px;
+
+}
+
+// end checkbox
+
+.login__btn {
+    max-width: 190px;
+    padding: 18px 57px;
+}
+
+.login__info {
+    padding-left: 50px;
+}
+
+.login__info-link {
+    color: $blue;
+}
+
+// page login end
+// start revocer password
+.login__sub-title {
+    padding-top: 26px;
+    display: block;
+    font-size: 16px;
+    color: $text;
+}
+
+.login__sub-title.recover {
+    padding: 0px 50px 0px;
+}
+
+.recover-pass.form__btn {
+    margin: 10px 0px 0px 0px;
+
+}
+
+// end recover password
+
+// start create account
+.creacte-account-sub {
+    padding: 26px 50px 0;
+}
+
+.creacte-account__btn.form__btn {
+    margin: 10px 0px 40px 0px;
+}
+
+// end create account
